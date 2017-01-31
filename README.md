@@ -2,7 +2,7 @@
 
 ## Instructions for SSH access to the instance
 
-1. Download Private Key below
+1. Download Private Key from [Udacity Developer Environment](https://www.udacity.com/account#!/development_environment)
 2. Move the private key file into the folder ~/.ssh (where ~ is your environment's home directory). So if you downloaded the file to the Downloads folder, just execute the following command in your terminal.
 ``mv ~/Downloads/udacity_key.rsa ~/.ssh/``
 3. Open your terminal and type in
