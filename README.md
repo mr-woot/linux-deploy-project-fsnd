@@ -152,7 +152,16 @@ To check yours: [Visit here](http://www.hcidata.info/host2ip.cgi)
  * Setup your database schema ``python database_setup.py``
  * Setup init values to database using: ``python tempmusic.py``
  * Restart apache ``sudo service apache2 restart``
+* **Note:** I got INTERNAL SERVER ERROR when opened on public ip of aws.<br>Check logs of Apache using: ``sudo cat /var/log/apache2/error.log``<br>
+ ```
+  [Mon Jan 30 17:45:06.474646 2017] [:error] [pid 16874:tid 140519943501568] [client 103.211.15.229:29408]     CLIENT_ID = json.loads(open('client_secrets.json', 'r').read())['web', referer: http://ec2-35-161-139-158.us-west-2.compute.amazonaws.com/
+ ```<br>
+ I added static path (/var/www/catalog/catalog/[json_file]) to the files where ``client_secrets.json`` and ``fb_client_secrets.json`` are located (in my case ``\_\_init\_\_.py``).
+* **Note:** Change JavaScript Origins in both Google and Facebook Oauth.
 
+## Sources if any:
+* Digital Ocean VPS Flask Hosting [https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps](Tutorial)
+* Udacity Discussion Forums.
 
 
 
