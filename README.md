@@ -1,8 +1,7 @@
 # Linux project deploying Full Stack Nanodegree.
 
 35.166.221.186 is my [PUBLIC\_IP] or [HOST\_IP]<br>
-http://ec2-35-161-139-158.us-west-2.compute.amazonaws.com is my [HOST\_ADDRESS]<br>
-To check yours: [Visit here](http://www.hcidata.info/host2ip.cgi)<br>
+http://ec2-35-161-139-158.us-west-2.compute.amazonaws.com is my [HOSTED\_URL]<br>
 
 ## Instructions for SSH access to the instance
 
