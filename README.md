@@ -16,7 +16,7 @@ http://ec2-35-161-139-158.us-west-2.compute.amazonaws.com is my [HOSTED\_URL]<br
 * ``sudo nano /etc/sudoers.d/grader``
 * Add: ``grader ALL=(ALL:ALL) ALL``, ``Ctrl+X, Y, Enter`` to save in nano editor.
 * **Note:** In terminal you will see something like ``root@ip-10-20-17-19:~$`` where ``ip-10-20-17-19`` is your local machine IP (different for different machines), add this IP to hosts file to avoid conflict of hosts. Edit ``sudo nano /etc/hosts``, append below ``127.0.0.1 localhost`` line ``127.0.0.1 localhost ip-10-20-17-19``. Save it.
-* **Note:** When you first login using ssh, we used something like ``ssh -i ~/.ssh/udacity_key.rsa root@35.161.139.158``, where ``35.166.221.186`` is your [PUBLIC\_IP] but when you are logged in to the VM, you will see ``root@ip-10-20-17-19:~$`` where ``ip-10-20-17-19`` is your [LOCAL\_IP].
+* **Note:** When you first login using ssh, we used something like ``ssh -i ~/.ssh/udacity_key.rsa root@35.161.139.158``, where ``35.161.139.158`` is your [PUBLIC\_IP] but when you are logged in to the VM, you will see ``root@ip-10-20-17-19:~$`` where ``ip-10-20-17-19`` is your [LOCAL\_IP].
 
 ## Update and Upgrade the packages
 * Run ``sudo apt-get update``, followed by ``sudo apt-get upgrade``.
